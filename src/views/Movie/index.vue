@@ -19,6 +19,9 @@
             </keep-alive>
         </div>
         <TabBar></TabBar>
+
+        <!-- 如果一个页面需要用到多个router-view，需要用到name(具体参考vue命名视图) -->
+        <router-view name="detail" />
     </div>
 </template>
 
