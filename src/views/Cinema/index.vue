@@ -13,8 +13,8 @@
                     特色 <i class="iconfont icon-lower-triangle"></i>
                 </div>
             </div>
+            <CiList />
         </div>
-        <CiList />
         <TabBar></TabBar>
     </div>
 </template>

@@ -3,10 +3,6 @@ export default {
     component : () => import('@/views/Movie'),
     children : [
         {
-            path : '/movie',
-            redirect : '/movie/nowPlaying'
-        },
-        {
             path : 'city',
             component : () => import('@/components/City')
         },
@@ -21,6 +17,32 @@ export default {
         {
             path : 'search',
             component : () => import('@/components/Search')
+        },
+        {
+            path : 'detail/1/:movieId',
+            components : {
+                default: ()=> import('@/components/NowPlaying'),
+                detail : ()=> import('@/views/Movie/detail')
+            },
+            //如果没有写动态路由components，props:true就可以了
+            props: {
+                detail: true
+            }
+        },
+        {
+            path : 'detail/2/:movieId',
+            components : {
+                default: ()=> import('@/components/ComingSoon'),
+                detail : ()=> import('@/views/Movie/detail')
+            },
+            //如果没有写动态路由components，props:true就可以了
+            props: {
+                detail: true
+            }
+        },
+        {
+            path : '/movie',
+            redirect : '/movie/nowPlaying'
         }
     ]
 }
