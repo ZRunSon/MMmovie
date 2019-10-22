@@ -80,7 +80,7 @@
     .search_body .search_result .img{ width: 60px; float:left; }
     .search_body .search_result .img img{ width: 100%; }
     .search_body .search_result .info{ float:left; margin-left: 15px; flex:1;}
-    .search_body .search_result .info p{ height: 22px; display: flex; line-height: 22px; font-size: 12px;}
-    .search_body .search_result .info p:nth-of-type(1) span:nth-of-type(1){ font-size: 18px; flex:1; }
+    .search_body .search_result .info p{ width: 100%;height: 22px; display: flex; line-height: 22px; font-size: 12px;}
+    .search_body .search_result .info p:nth-of-type(1) span:nth-of-type(1){ font-size: 18px; flex:1;}
     .search_body .search_result .info p:nth-of-type(1) span:nth-of-type(2){ font-size: 16px; color:#fc7103;}
 </style>

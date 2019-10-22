@@ -8,7 +8,7 @@ Vue.use(Router)
 
 export default new Router({
   mode: 'history',
-  base: process.env.BASE_URL,
+  base: process.env.BASE_URL,   //基础的
   routes: [
     MovieRouter,
     CinemaRouter,
